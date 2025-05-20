@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "llm-training-template"
+version = "0.1.0"
+description = "Modular LLM training template for individual researchers using Hugging Face with Hydra and Weights and Biases"
+authors = ["Emre Kuru <emre@kuru.ozu.edu.tr>"]
+packages = [{ include = "src" }]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
