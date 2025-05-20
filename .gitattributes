@@ -1,0 +1,44 @@
+* text=auto
+
+# Python files
+*.py text diff=python
+
+# Jupyter notebooks
+*.ipynb text
+
+# Model files
+*.pkl binary
+*.h5 binary
+*.pt binary
+*.pth binary
+*.onnx binary
+*.mlmodel binary
+
+# Data files
+*.csv text
+*.json text
+*.yaml text
+*.yml text
+*.xml text
+*.npy binary
+*.npz binary
+
+# Documentation
+*.md text
+*.txt text
+
+# Git config
+.gitattributes text
+.gitignore text
+
+# Don't diff or merge these files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+
+# Ignore when exporting
+.gitattributes export-ignore
+.gitignore export-ignore 
