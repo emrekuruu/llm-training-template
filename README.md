@@ -20,7 +20,7 @@ project_name/
 │   └── evaluate.sh
 │
 ├── run.py                       # Main training entrypoint (Hydra powered)
-├── requirements.txt             # Python dependencies
+├── pyproject.toml               # Poetry-based dependency manager
 ├── .env                         # W&B keys, etc.
 └── README.md                    # Project overview
 
