@@ -12,7 +12,7 @@ project_name/
 │   ├── __init__.py
 │   ├── data.py                  # Dataset loading & preprocessing
 │   ├── model.py                 # Model & PEFT/LoRA setup
-│   ├── trainer.py               # Training loop (Accelerate or trl)
+│   ├── trainer.py               # Training loop 
 │   ├── eval.py                  # Evaluation logic
 │   └── utils.py                 # Helper functions (seed, logging, etc)
 │
