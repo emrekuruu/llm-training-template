@@ -1,3 +1,4 @@
+```text
 project_name/
 │
 ├── configs/                      # Hydra config files
