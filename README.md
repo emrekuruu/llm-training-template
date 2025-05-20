@@ -23,6 +23,7 @@ project_name/
 ├── pyproject.toml               # Poetry-based dependency manager
 ├── .env                         # W&B keys, etc.
 └── README.md                    # Project overview
+```
 
 # README.md
 
