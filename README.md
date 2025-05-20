@@ -11,7 +11,7 @@ project_name/
 ├── src/                         # Core source code
 │   ├── __init__.py
 │   ├── data.py                  # Dataset loading & preprocessing
-│   ├── model.py                 # Model & PEFT/LoRA setup
+│   ├── model.py                 # Model logic or integration
 │   ├── trainer.py               # Training loop 
 │   ├── eval.py                  # Evaluation logic
 │   └── utils.py                 # Helper functions (seed, logging, etc)
@@ -29,9 +29,9 @@ project_name/
 # README.md
 
 ## 📘 Project Overview
-This template provides a clean, modular starting point for **individual researchers** looking to train, finetune, or run experiments on Hugging Face models using LoRA, Accelerate, and Hydra.
+This template provides a clean, modular starting point for **researchers** looking to train, finetune, or run ML experiments using Hydra, and Weights & Biases for configuration management.
 
-It is structured for flexibility, reproducibility, and rapid experimentation, while keeping the project lightweight and self-contained.
+It is framework-agnostic and works equally well for NLP, vision, tabular, or reinforcement learning tasks, can be integrated with Sklearn, PyTorch, Tensorflow or HuggingFace pipelines. 
 
 ---
 
@@ -49,9 +49,9 @@ It is structured for flexibility, reproducibility, and rapid experimentation, wh
 
 - ✅ Modular Hydra configs (switch model/data/train settings easily)
 - ✅ Native Weights & Biases logging integration
-- ✅ Accelerate/trl-ready training loop (custom loss supported)
-- ✅ PEFT/LoRA support for lightweight LLM finetuning
-- ✅ Hugging Face `datasets` and `transformers` integration
+- ✅ Customizable training loop for any ML task (NLP, CV, tabular, etc.)
+- ✅ Clean separation between data, model, and training logic
+- ✅ Poetry-powered reproducible environment
 
 ---
 
@@ -65,7 +65,7 @@ cd my_project
 
 ### 2. Install dependencies
 ```bash
-pip install -r requirements.txt
+poetry install
 ```
 
 ### 3. Set up environment variables
@@ -81,20 +81,20 @@ python run.py
 
 To override a config:
 ```bash
-python run.py train.batch_size=8 model.model_name=bert-base-uncased
+python run.py train.batch_size=8 model.name=my_model_v1
 ```
 
 ---
 
 ## 🛠️ Todo (for you to implement)
 - Fill in `src/data.py` with your dataset logic
-- Define your model or load via Hugging Face in `src/model.py`
+- Define your model architecture in `src/model.py`
 - Implement training steps inside `src/trainer.py`
 - Add evaluation code in `src/eval.py`
 
 ---
 
 ## ✍️ Author
-Built for individual deep learning researchers who want structure without overhead.
+Built for individual ML researchers who want structure without boilerplate.
 
 Feel free to fork and adapt!

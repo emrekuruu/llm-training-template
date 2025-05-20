@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "llm-training-template"
+name = "ml-training-template"
 version = "0.1.0"
-description = "Modular LLM training template for individual researchers using Hugging Face with Hydra and Weights and Biases"
+description = "Modular ML training template for individual researchers using Hydra and Weights and Biases"
 authors = ["Emre Kuru <emre@kuru.ozu.edu.tr>"]
 packages = [{ include = "src" }]
 readme = "README.md"
